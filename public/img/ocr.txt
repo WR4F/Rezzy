@@ -1,0 +1,30 @@
+Education .
+Currently enrolled for first year at Harvard College.
+Courses taken include: Operating Systems Structure,
+Data Base Kanagezent, Coepiler Construction and Computer
+Graphics. Honors student and received A's in all of the
+above.
+Experience: PDP-10, PDP-8, PDP-11, PDP-1, CDC-6400, Burroughs
+B-SS00, Nova 1200, MCS-8008. Languages used include FORTRAN,
+COBCL, ALGOL, BASIC, LISP, JOSS and rachine languages for rost
+of the above computers.
+TRW Systems Group, Vancouver, Washington 1/8/73-9/3/73
+Systess prograrmer incolved with file design and modifications
+to Operating System, System library, and Utilities (flow-
+charting, coding, debugging and docurentation). The project
+davolved setting up a real-tire system for power control
+around two large PDP-10's and three PDP-21's,
+
+In partnership with Paul G. Allen 6/2/72 - present
+Designed and put together a system for traffic engineers
+to study traffic flow. The system is built around Intel's
+MCS-8008 microconputer. ‘The software and hardware setup has
+been fully tested using a prototype. Deronstrations to
+customers are planned for May 1974,
+
+On contract to Lakeside School, Seattle, Washington 6/1/71-9/10/71 & 6/1/72-3/10/72
+
+Co-leacer and co-partner in project to set up a general purpose
+program to do scheduling for private high schools. Software
+was written mainly in FORTRAN on CDC-6400, PEP-10 & PDP-1l,
+Total profits from this, yenture exceed. $29,909.

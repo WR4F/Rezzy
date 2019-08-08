@@ -1,0 +1,245 @@
+/* needs a fancy serif font, more serious appearance to look like paper */
+/* cursive for headers? */
+/* let them choose between both styles, simple/dark OR fancy/book */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1.03em;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+body * {
+	/* color: #f4e7cf; */
+}
+
+@media print {
+	body,
+	html {
+		height: 297mm;
+		width: 210mm;
+		margin: 0 !important;
+		padding: 0 !important;
+		border: 0 !important;
+		/* change the margins as you want them to be. */
+		font-size: 0.5em !important;
+		font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	}
+	.page-title img {
+		display: none;
+	}
+	.App.row.container {
+		display: table;
+	}
+	.App > col {
+		float: left;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+	font-weight: 400 !important;
+	margin-top: 1em;
+}
+
+h1 {
+	font-size: 2.5em !important;
+}
+h2 {
+	font-size: 2em !important;
+}
+h3 {
+	font-size: 1.75em !important;
+}
+h4 {
+	font-size: 1.5em !important;
+}
+h5 {
+	font-size: 1.35em !important;
+}
+h6 {
+	font-size: 1.2em !important;
+}
+p {
+	font-size: 1.05em !important;
+}
+li {
+	font-size: 1em !important;
+}
+
+.App {
+	text-align: left;
+	padding: 0 10%;
+	margin: 0;
+	min-height: 100vh;
+}
+
+ul:not(.browser-default) > li {
+	list-style-type: none;
+	margin-bottom: 0.5em;
+	line-height: 1.2em;
+}
+
+ul.circles li {
+	list-style-type: disc !important;
+	margin-left: 1.4em;
+}
+
+ul.squares li {
+	list-style-type: square !important;
+	margin-left: 1.4em;
+}
+
+.card {
+	margin: 0;
+	box-shadow: none;
+	/* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+	border-radius: 0;
+}
+
+.card:first-child {
+	border-radius: 0.2em 0.2em 0 0;
+}
+.card:last-child {
+	border-bottom-left-radius: 0.2em;
+	border-bottom-right-radius: 0.2em;
+}
+
+.section-title {
+	margin: 1em 0;
+	position: relative;
+	width: 100%;
+	padding: 0 !important;
+}
+.section-title::after {
+	content: "";
+	display: block;
+	width: calc(100%);
+	top: 50%;
+	position: absolute;
+	border-top: 1px solid #f4e7cf96;
+	height: 100%;
+	z-index: 1;
+}
+
+.section-title > * {
+	position: relative;
+	display: block;
+	text-align: center !important;
+	z-index: 2;
+	background: #ffffff;
+	padding: 0 1em;
+	margin: 0 auto !important;
+	width: max-content;
+	font-size: 1.5em;
+}
+
+.page-title {
+	position: relative;
+	width: 100%;
+	padding: 0 !important;
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+	justify-content: center;
+	font-size: 0.8em;
+}
+.page-title img {
+	margin: 2em 4em;
+	width: 30%;
+	filter: brightness(200%) invert(1);
+}
+.page-title img:last-child {
+	transform: scaleX(-1);
+}
+.page-title :not(img) {
+	flex-shrink: 0;
+	margin: 0 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+	.page-title img {
+		margin: 1em 1em;
+	}
+	body {
+		font-size: 1em;
+	}
+	.App {
+		text-align: left;
+		padding: 0 0;
+		margin: 0;
+		min-height: 100vh;
+	}
+	.card-panel {
+		padding: 0 0.2em 0 0.2em;
+	}
+	.col {
+		padding: 0.5em !important;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.page-title img {
+		margin: 1em 0em;
+	}
+	body {
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	body {
+		font-size: 0.55em;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.page-title img {
+		display: none;
+	}
+}
+
+.dark {
+	color: #f4e7cf;
+	background-color: #263238;
+}
+.dark .section-title > * {
+	background: #263238;
+}
+
+.dark .page-title img {
+	filter: none !important;
+}
+
+.sepia {
+	color: #263238;
+	background-color: #f4e7cf;
+}
+
+.sepia .section-title > * {
+	background: #f4e7cf;
+}
+
+.sepia .section-title::after {
+	border-top: 1px solid #263238;
+}
+
+.sepia .page-title img {
+	filter: invert(1);
+}
+
+.serif * {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.sans-serif * {
+	/* font-family: unset; */
+}
