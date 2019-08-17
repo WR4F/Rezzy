@@ -11,8 +11,10 @@ body {
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
+	font-weight: 300;
 }
 body * {
+	transition: 0.4s ease all !important;
 	/* color: #f4e7cf; */
 }
 
@@ -31,10 +33,10 @@ body * {
 	.page-title img {
 		display: none;
 	}
-	.App.row.container {
+	#App.row.container {
 		display: table;
 	}
-	.App > col {
+	#App > col {
 		float: left;
 	}
 }
@@ -75,7 +77,8 @@ li {
 	font-size: 1em !important;
 }
 
-.App {
+#App {
+	z-index: 1;
 	text-align: left;
 	padding: 0 10%;
 	margin: 0;
@@ -125,7 +128,7 @@ ul.squares li {
 	width: calc(100%);
 	top: 50%;
 	position: absolute;
-	border-top: 1px solid #f4e7cf96;
+	border-top: 1px solid #00000021;
 	height: 100%;
 	z-index: 1;
 }
@@ -172,7 +175,7 @@ ul.squares li {
 	body {
 		font-size: 1em;
 	}
-	.App {
+	#App {
 		text-align: left;
 		padding: 0 0;
 		margin: 0;
@@ -215,6 +218,10 @@ ul.squares li {
 	background: #263238;
 }
 
+.dark .section-title::after {
+	border-top: 1px solid #f4e7cf75;
+}
+
 .dark .page-title img {
 	filter: none !important;
 }
@@ -229,17 +236,56 @@ ul.squares li {
 }
 
 .sepia .section-title::after {
-	border-top: 1px solid #263238;
+	border-top: 1px solid #26323840;
 }
 
 .sepia .page-title img {
 	filter: invert(1);
 }
 
-.serif * {
+.serif *,
+.serif {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.sans-serif * {
-	/* font-family: unset; */
+.sans *,
+.sans {
+	font-family: unset;
+}
+
+/* Theme Chooser */
+#Themer {
+	z-index: 2;
+	position: absolute;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 5px #000000aa;
+}
+
+#Themer > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+}
+
+#Themer > div > div {
+	padding: 1em 2em;
+	flex-grow: 1;
+	cursor: pointer;
+	text-align: center;
+	border: 0 1px solid #aaaaaa33;
+	box-shadow: inset 0px 0 0px salmon;
+}
+
+#Themer > div > div:hover {
+	box-shadow: inset 0px -4em 0px salmon;
+}
+#Themer > div > div:active {
+	box-shadow: inset 0px 4em 0px salmon;
+	transition: 0s ease all !important;
+}
+#Themer > div > div.active {
+	box-shadow: inset 0px 0.3em 0px salmon !important;
+	transition: inherit !important;
 }

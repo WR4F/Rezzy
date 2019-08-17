@@ -17,7 +17,7 @@ import Section from "../components/Section"
 class MainPage extends Component {
 	render() {
 		return (
-			<Row className="App dark serif">
+			<Row id="App" className="sepia serif">
 				<Title name="William H. Gates III" />
 				<Sidebar>
 					<h6>Programming</h6>
@@ -76,12 +76,7 @@ class MainPage extends Component {
 							Operating System, System library, and Utilities (flow- charting,
 							coding, debugging and documentation). The project involved setting
 							up a real-tire system for power control around two large PDP-10's
-							and three PDP-21's, In partnership with Paul G. Allen 6/2/72 -
-							present Designed and put together a system for traffic engineers
-							to study traffic flow. The system is built around Intel's MCS-8008
-							microconputer. The software and hardware setup has been fully
-							tested using a prototype. Deronstrations to customers are planned
-							for May 1974.
+							and three PDP-21's.
 						</p>
 						<h6>In partnership with Paul G. Allen 6/2/72 - Present</h6>
 						<p>
