@@ -3,7 +3,7 @@ import React, { Component } from "react"
 import "./App.css"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 
-import Themer from "./components/Themer"
+import Editor from "./components/Editor"
 import MainPage from "./pages/MainPage"
 
 class App extends Component {
@@ -15,11 +15,10 @@ class App extends Component {
 
 		return (
 			<div>
-				<Themer />
+				<Editor />
 				<BrowserRouter>
 					<Switch>
 						<Route path="/" component={MainPage} exact />
-						<Route path="/cart" component={MainPage} exact />
 					</Switch>
 				</BrowserRouter>
 			</div>

@@ -253,14 +253,44 @@ ul.squares li {
 	font-family: unset;
 }
 
-/* Theme Chooser */
-#Themer {
+/* Editor and child elements */
+#Editor {
 	z-index: 2;
-	position: absolute;
-	opacity: 1;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 1px 1px 5px #000000aa;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #263238;
+	color: #eee;
+}
+
+#Picker {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-flow: 1;
+	width: 100%;
+}
+#Picker > div {
+	padding: 5px;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	text-align: center;
+	width: auto;
+	flex-grow: 1;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	cursor: grab;
+}
+
+#Themer {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 1px 1px 5px #000000aa;
 }
 
 #Themer > div {
